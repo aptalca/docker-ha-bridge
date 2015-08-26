@@ -22,4 +22,4 @@ if [ -z "$SERVERPORT" ]; then
   SERVERPORT=8080
 fi
 
-/sbin/setuser nobody java -Xmx312M -jar -Djava.net.preferIPv4Stack=true amazon-echo-bridge-"$VERSION".jar -Dupnp.config.address=$SERVERIP -Dserver.port=$SERVERPORT -Dvera.address=$VERAIP
+/sbin/setuser nobody java -Xmx312M -jar -Djava.net.preferIPv4Stack=true ha-bridge-"$VERSION".jar -Dupnp.config.address=$SERVERIP -Dserver.port=$SERVERPORT -Dvera.address=$VERAIP
