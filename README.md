@@ -23,5 +23,5 @@ You can access the WebUI at `http://SERVERIP:SERVERPORT/`
 It is much much easier to manage connected devices that way
   
 ## Changelog:  
-2015-09-01 - Update to ver 0.4.0
+2015-09-01 - Update to ver 0.4.0  
 2015-08-28 - Initial Release
