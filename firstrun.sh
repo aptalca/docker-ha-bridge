@@ -22,4 +22,4 @@ if [ -z "$SERVERPORT" ]; then
   SERVERPORT=8080
 fi
 
-/sbin/setuser nobody java -jar -Djava.net.preferIPv4Stack=true -Dupnp.config.address=$SERVERIP -Dserver.port=$SERVERPORT -Dvera.address=$VERAIP -Dupnp.strict=true -Dtrace.upnp=true -Dvtwo.compatibility=false ha-bridge-"$VERSION".jar 2>&1 | tee /config/ha-bridge.log
+/sbin/setuser nobody java -jar -Djava.net.preferIPv4Stack=true -Dupnp.config.address=$SERVERIP -Dserver.port=$SERVERPORT -Dvera.address=$VERAIP -Dupnp.strict=true -Dvtwo.compatibility=false ha-bridge-"$VERSION".jar 2>&1 | tee /config/ha-bridge.log
