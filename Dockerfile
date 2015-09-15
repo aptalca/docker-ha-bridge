@@ -4,7 +4,7 @@ MAINTAINER aptalca
 
 VOLUME ["/config"]
 
-ENV VERSION="0.4.0"
+ENV VERSION="0.4.4"
 
 RUN export DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_FRONTEND=noninteractive && \
 add-apt-repository -y ppa:webupd8team/java && \
