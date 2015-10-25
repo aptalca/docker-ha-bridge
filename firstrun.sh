@@ -9,7 +9,7 @@ cd /config
 
 if [ ! -f /config/ha-bridge-"$VERSION".jar ]; then
   echo "Installing version '$VERSION'"
-  wget http://www.bwssystems.com/files/ha-bridge-"$VERSION".jar
+  wget https://github.com/bwssytems/ha-bridge/releases/download/v"$VERSION"/ha-bridge-"$VERSION".jar
 else
   echo "Using existing version '$VERSION'"
 fi
