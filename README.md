@@ -11,19 +11,27 @@ On unRaid, install from the Community Applications and enter the app folder loca
 
 On other platforms, you can run this docker with the following command:
 
-```docker run -d --name="Home-Automation-Bridge" --net="host" -e SERVERIP="192.168.X.X" -e SERVERPORT="XXXX" -e VERAIP="192.168.X.X" -v /path/to/config/:/config:rw -v /etc/localtime:/etc/localtime:ro aptalca/home-automation-bridge```
+```docker run -d --name="Home-Automation-Bridge" --net="host" -e SERVERIP="192.168.X.X" -e SERVERPORT="XXXX" -v /path/to/config/:/config:rw -v /etc/localtime:/etc/localtime:ro aptalca/home-automation-bridge```
 
 - Replace the SERVERIP variable (192.168.X.X) with your server's IP
 - Replace the SERVERPORT variable (XXXX) with whichever port you choose.
-- Replace the VERAIP variable (192.168.X.X) with your Vera IP
 - Replace the "/path/to/config" with your choice of location
-- By default, this will install the latest version as of the latest update to this container, but if you want to run a different version (to go back to the previous version perhaps), include the following environment variable in your docker run command `-e VERSION="0.X.X"`
+
+#### Optional Variables for the run command
+- Include your VERA IP as `-e VERAIP="X.X.X.X"`
+- Include your Harmony IP as `-e HARMONYIP="X.X.X.X"`
+- Include your Harmony username as `-e HARMONYUSER="yourusername"`
+- Include your Harmony password as `-e HARMONYPWD="yourpassword"`
+- By default, this will install the version listed in the change log below, but if you want to run a different version (to go back to the previous version perhaps), include the following environment variable in your docker run command `-e VERSION="X.X.X"`
+- To turn off -Dupnp.strict include `-e UPNPSTRICT="False"` (Default is true)
+- To turn on -Dtrace.upnp include `-e UPNPTRACE="True"` (Default is False)
   
 You can access the WebUI at `http://SERVERIP:SERVERPORT/`  
 It is much much easier to manage connected devices that way
   
 ## Changelog:  
-2015-10-25 - Update to ver 0.4.10  
-2015-09-15 - Update to ver 0.4.4 / Update variables for Harmony compatibility  
-2015-09-01 - Update to ver 0.4.0  
-2015-08-28 - Initial Release
+- 2015-11-04 - Update to ver 1.0.7 / Environment variables updated to include support for Harmony
+- 2015-10-25 - Update to ver 0.4.10  
+- 2015-09-15 - Update to ver 0.4.4 / Update variables for Harmony compatibility  
+- 2015-09-01 - Update to ver 0.4.0  
+- 2015-08-28 - Initial Release
