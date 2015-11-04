@@ -23,8 +23,8 @@ On other platforms, you can run this docker with the following command:
 - Include your Harmony username as `-e HARMONYUSER="yourusername"`
 - Include your Harmony password as `-e HARMONYPWD="yourpassword"`
 - By default, this will install the version listed in the change log below, but if you want to run a different version (to go back to the previous version perhaps), include the following environment variable in your docker run command `-e VERSION="X.X.X"`
-- To turn off -Dupnp.strict include `-e UPNPSTRICT="False"` (Default is true)
-- To turn on -Dtrace.upnp include `-e UPNPTRACE="True"` (Default is False)
+- To turn off -Dupnp.strict include `-e UPNPSTRICT="false"` (Default is true)
+- To turn on -Dtrace.upnp include `-e UPNPTRACE="true"` (Default is false)
   
 You can access the WebUI at `http://SERVERIP:SERVERPORT/`  
 It is much much easier to manage connected devices that way
