@@ -1,6 +1,6 @@
 # Home Automation Bridge
 
-Use Amazon Echo to voice control your home automation devices (uses http commands between the echo and your home automation controller)
+Use Amazon Echo to voice control your home automation devices through http commands sent to your home automation controller or built-in direct control of the Harmony Hub.
 
 ## Install On unRaid:
 
