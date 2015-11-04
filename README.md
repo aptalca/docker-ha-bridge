@@ -16,7 +16,7 @@ On other platforms, you can run this docker with the following command:
 ```docker run -d --name="Home-Automation-Bridge" --net="host" -e SERVERIP="192.168.X.X" -e SERVERPORT="XXXX" -v /path/to/config/:/config:rw -v /etc/localtime:/etc/localtime:ro aptalca/home-automation-bridge```
 
 - Replace the SERVERIP variable (192.168.X.X) with your server's IP
-- Replace the SERVERPORT variable (XXXX) with whichever port you choose.
+- Replace the SERVERPORT variable (XXXX) with whichever port you choose for the web gui.
 - Replace the "/path/to/config" with your choice of location
 
 #### Optional Variables for the run command
