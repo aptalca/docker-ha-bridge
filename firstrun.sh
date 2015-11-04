@@ -27,7 +27,7 @@ else
 fi
 
 if [ ! $HARMONYIP="None" ]; then
-  ADDPARAM+=" -Dharmony.address=$HARMONYIP Dharmony.user=$HARMONYUSER -Dharmony.pwd=$HARMONYPWD"
+  ADDPARAM+=" -Dharmony.address=$HARMONYIP -Dharmony.user=$HARMONYUSER -Dharmony.pwd=$HARMONYPWD"
   echo "Harmony connected at IP address : $HARMONYIP"
 else
   echo "Harmony not connected"
