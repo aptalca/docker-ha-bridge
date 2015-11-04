@@ -16,12 +16,6 @@ fi
 echo "Setting correct permissions"
 chown -R nobody:users /config
 
-#check to see if SERVERPORT variable is set, if not, set it to default
-if [ -z "$SERVERPORT" ]; then
-  echo "SERVERPORT environment not passed, using default port 8080"
-  SERVERPORT=8080
-fi
-
 ADDPARAM="-Dupnp.config.address=$SERVERIP -Dserver.port=$SERVERPORT -Dupnp.strict=$UPNPSTRICT -Dtrace.upnp=$UPNPTRACE"
 echo -e "Parameters used:\nServer IP : $SERVERIP\nServer Port : $SERVERPORT\nUpnp.Strict : $UPNPSTRICT\nTrace.upnp : $UPNPTRACE"
 
