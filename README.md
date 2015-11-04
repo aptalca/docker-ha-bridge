@@ -4,7 +4,9 @@ Use Amazon Echo to voice control your home automation devices (uses http command
 
 ## Install On unRaid:
 
-On unRaid, install from the Community Applications and enter the app folder location and the port for the webUI.
+On unRaid, install from the Community Applications and enter the app folder location, server IP and the port for the webUI Under advanced view. Note: If you change the port, you also have to change the WEBUI address in the "Additional Fields" at the bottom. 
+  
+You can also change the optional fields to connect a Vera or a Harmony.
 
 
 ## Install On Other Platforms (like Ubuntu or Synology 5.2 DSM, etc.):
