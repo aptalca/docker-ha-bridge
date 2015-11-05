@@ -2,6 +2,8 @@
 
 Use Amazon Echo to voice control your home automation devices through http commands sent to your home automation controller or built-in direct control of the Harmony Hub.
 
+This is a docker container for bwssystems' ha-bridge - https://github.com/bwssytems/ha-bridge
+
 ## Install On unRaid:
 
 On unRaid, install from the Community Applications and enter the app folder location, server IP and the port for the webUI Under advanced view. Note: If you change the port, you also have to change the WEBUI address in the "Additional Fields" at the bottom. 
