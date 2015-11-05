@@ -31,7 +31,6 @@ On other platforms, you can run this docker with the following command:
 - To turn on -Dtrace.upnp include `-e UPNPTRACE="true"` (Default is false)
   
 You can access the WebUI at `http://SERVERIP:SERVERPORT/`  
-It is much much easier to manage connected devices that way
   
 ## Changelog:  
 - 2015-11-04 - Update to ver 1.0.7 / Environment variables updated to include support for Harmony
