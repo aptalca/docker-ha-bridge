@@ -33,6 +33,7 @@ On other platforms, you can run this docker with the following command:
 You can access the WebUI at `http://SERVERIP:SERVERPORT/`  
   
 ## Changelog: 
+- 2015-11-19 - Update to ver 1.1.0
 - 2015-11-13 - Update to ver 1.0.8
 - 2015-11-04 - Update to ver 1.0.7 / Environment variables updated to include support for Harmony
 - 2015-10-25 - Update to ver 0.4.10  
