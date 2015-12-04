@@ -4,7 +4,7 @@ MAINTAINER aptalca
 
 VOLUME ["/config"]
 
-ENV VERSION="1.1.0" VERAIP="None" HARMONYIP="None" UPNPSTRICT="true" UPNPTRACE="false"
+ENV VERSION="1.2.1" VERAIP="None" HARMONYIP="None" UPNPSTRICT="true" UPNPTRACE="false"
 
 RUN export DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_FRONTEND=noninteractive && \
 add-apt-repository -y ppa:webupd8team/java && \
