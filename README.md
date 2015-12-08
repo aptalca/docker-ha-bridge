@@ -33,6 +33,7 @@ On other platforms, you can run this docker with the following command:
 You can access the WebUI at `http://SERVERIP:SERVERPORT/`  
   
 ## Changelog: 
+- 2015-12-07 - Update to ver 1.2.2
 - 2015-12-04 - Update to ver 1.2.1
 - 2015-11-19 - Update to ver 1.1.0
 - 2015-11-13 - Update to ver 1.0.8
