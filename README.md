@@ -1,17 +1,17 @@
-# Home Automation Bridge
+### Home Automation Bridge
 
 Use Amazon Echo to voice control your home automation devices through http commands sent to your home automation controller or built-in direct control of the Harmony Hub.
 
 This is a docker container for bwssystems' ha-bridge - https://github.com/bwssytems/ha-bridge
 
-## Install On unRaid:
+#### Install On unRaid:
 
 On unRaid, install from the Community Applications and enter the app folder location, server IP and the port for the webUI Under advanced view. Note: If you change the port, you also have to change the WEBUI address in the "Additional Fields" at the bottom. 
   
 You can also change the optional fields to connect a Vera or a Harmony.
 
 
-## Install On Other Platforms (like Ubuntu or Synology 5.2 DSM, etc.):
+#### Install On Other Platforms (like Ubuntu or Synology 5.2 DSM, etc.):
 
 On other platforms, you can run this docker with the following command:
 
@@ -21,7 +21,7 @@ On other platforms, you can run this docker with the following command:
 - Replace the SERVERPORT variable (XXXX) with whichever port you choose for the web gui.
 - Replace the "/path/to/config" with your choice of location
 
-#### Optional Variables for the run command
+##### Optional Variables for the run command
 - Include your VERA IP as `-e VERAIP="X.X.X.X"`
 - Include your Harmony IP as `-e HARMONYIP="X.X.X.X"`
 - Include your Harmony username as `-e HARMONYUSER="yourusername"`
@@ -32,7 +32,8 @@ On other platforms, you can run this docker with the following command:
   
 You can access the WebUI at `http://SERVERIP:SERVERPORT/`  
   
-## Changelog: 
+#### Changelog: 
+- 2015-12-16 - Update to ver 1.2.3
 - 2015-12-07 - Update to ver 1.2.2
 - 2015-12-04 - Update to ver 1.2.1
 - 2015-11-19 - Update to ver 1.1.0
