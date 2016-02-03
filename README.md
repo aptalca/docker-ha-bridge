@@ -23,9 +23,13 @@ On other platforms, you can run this docker with the following command:
 
 ##### Optional Variables for the run command
 - Include your VERA IP as `-e VERAIP="X.X.X.X"`
+- - For multiple Veras, enter `-e VERAIP="{devices:[{name:nameforyourvera,ip:X.X.X.X},{name:nameforyoursecondvera,ip:X.X.X.X}]}"`
 - Include your Harmony IP as `-e HARMONYIP="X.X.X.X"`
+- - For multiple Harmonys, enter `-e HARMONYIP="{devices:[{name:nameforyourharmony,ip:X.X.X.X},{name:nameforyoursecondharmony,ip:X.X.X.X}]}"`
 - Include your Harmony username as `-e HARMONYUSER="yourusername"`
 - Include your Harmony password as `-e HARMONYPWD="yourpassword"`
+- Include your Nest username as `-e NESTUSER="yourusername"`
+- Include your Nest password as `-e NESTPWD="yourpassword"`
 - By default, this will install the version listed in the change log below, but if you want to run a different version (to go back to the previous version perhaps), include the following environment variable in your docker run command `-e VERSION="X.X.X"`
 - To turn off -Dupnp.strict include `-e UPNPSTRICT="false"` (Default is true)
 - To turn on -Dtrace.upnp include `-e UPNPTRACE="true"` (Default is false)
@@ -33,6 +37,7 @@ On other platforms, you can run this docker with the following command:
 You can access the WebUI at `http://SERVERIP:SERVERPORT/`  
   
 #### Changelog: 
+- 2016-02-03 - Update to ver 1.3.7 - Support for Nest added as well as support for multiple Veras and Harmonys
 - 2015-12-16 - Update to ver 1.2.3
 - 2015-12-07 - Update to ver 1.2.2
 - 2015-12-04 - Update to ver 1.2.1
