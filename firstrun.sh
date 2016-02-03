@@ -33,5 +33,12 @@ else
   echo "Harmony not connected"
 fi
 
+if [ ! $NESTUSER = "None" ]; then
+  ADDPARAM+=" -Dnest.user=$NESTUSER -Dnest.pwd=$NESTPWD"
+  echo "Nest user entered : $NESTUSER"
+else
+  echo "Nest not connected"
+fi
+
 echo "Starting Home Automation Bridge"
 /sbin/setuser nobody java -jar $ADDPARAM ha-bridge-"$VERSION".jar 2>&1 | tee /config/ha-bridge.log
