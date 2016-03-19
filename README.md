@@ -1,6 +1,6 @@
 ### Home Automation Bridge
 
-Use Amazon Echo to voice control your home automation devices through http commands sent to your home automation controller or built-in direct control of the Harmony Hub.
+Use Amazon Echo to voice control your home automation devices through http commands sent to your home automation controller or built-in direct control of the Harmony Hub and Nest.
 
 This is a docker container for bwssystems' ha-bridge - https://github.com/bwssytems/ha-bridge
 
@@ -8,7 +8,7 @@ This is a docker container for bwssystems' ha-bridge - https://github.com/bwssyt
 
 On unRaid, install from the Community Applications and enter the app folder location, server IP and the port for the webUI Under advanced view. Note: If you change the port, you also have to change the WEBUI address in the "Additional Fields" at the bottom. 
   
-You can also change the optional fields to connect a Vera or a Harmony.
+After install, open the WebUI to add your Vera, Harmony and Nest settings.
 
 
 #### Install On Other Platforms (like Ubuntu or Synology 5.2 DSM, etc.):
@@ -22,21 +22,11 @@ On other platforms, you can run this docker with the following command:
 - Replace the "/path/to/config" with your choice of location
 
 ##### Optional Variables for the run command
-- Include your VERA IP as `-e VERAIP="X.X.X.X"`
-- - For multiple Veras, enter `-e VERAIP="{devices:[{name:nameforyourvera,ip:X.X.X.X},{name:nameforyoursecondvera,ip:X.X.X.X}]}"`
-- Include your Harmony IP as `-e HARMONYIP="X.X.X.X"`
-- - For multiple Harmonys, enter `-e HARMONYIP="{devices:[{name:nameforyourharmony,ip:X.X.X.X},{name:nameforyoursecondharmony,ip:X.X.X.X}]}"`
-- Include your Harmony username as `-e HARMONYUSER="yourusername"`
-- Include your Harmony password as `-e HARMONYPWD="yourpassword"`
-- Include your Nest username as `-e NESTUSER="yourusername"`
-- Include your Nest password as `-e NESTPWD="yourpassword"`
 - By default, this will install the version listed in the change log below, but if you want to run a different version (to go back to the previous version perhaps), include the following environment variable in your docker run command `-e VERSION="X.X.X"`
-- To turn off -Dupnp.strict include `-e UPNPSTRICT="false"` (Default is true)
-- To turn on -Dtrace.upnp include `-e UPNPTRACE="true"` (Default is false)
-  
-You can access the WebUI at `http://SERVERIP:SERVERPORT/`  
+- Once installed, open the WebUI at `http://SERVERIP:SERVERPORT/` and enter your Vera, Harmony and Nest info.
   
 #### Changelog: 
+- 2016-03-19 - Update to ver 1.4.1 - Vera, Harmony and Nest settings are now managed through the WebUI
 - 2016-02-03 - Update to ver 1.3.7 - Support for Nest added as well as support for multiple Veras and Harmonys
 - 2015-12-16 - Update to ver 1.2.3
 - 2015-12-07 - Update to ver 1.2.2
