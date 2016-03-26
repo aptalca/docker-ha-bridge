@@ -26,6 +26,7 @@ On other platforms, you can run this docker with the following command:
 - Once installed, open the WebUI at `http://SERVERIP:SERVERPORT/` and enter your Vera, Harmony and Nest info.
   
 #### Changelog: 
+- 2016-03-26 - Update to ver 1.4.2
 - 2016-03-19 - Update to ver 1.4.1 - Vera, Harmony and Nest settings are now managed through the WebUI
 - 2016-02-03 - Update to ver 1.3.7 - Support for Nest added as well as support for multiple Veras and Harmonys
 - 2015-12-16 - Update to ver 1.2.3
