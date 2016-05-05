@@ -22,11 +22,11 @@ On other platforms, you can run this docker with the following command:
 - Replace the "/path/to/config" with your choice of location
 
 ##### Optional Variables for the run command
-- By default, this will install the version listed in the change log below, but if you want to run a different version (to go back to the previous version perhaps), include the following environment variable in your docker run command `-e VERSION="X.X.X"`
+- By default, this will install the latest version on bwssystems github repo, but if you want to run a different version (to go back to the previous version perhaps), include the following environment variable in your docker run command `-e VERSION="X.X.X"`
 - Once installed, open the WebUI at `http://SERVERIP:SERVERPORT/` and enter your Vera, Harmony and Nest info.
   
 #### Changelog: 
-- 2016-05-05 - Auto updates on restart / Manual version input removed
+- 2016-05-05 - Auto updates on restart (unless manual version is input)
 - 2016-05-04 - Update to ver 2.0.4
 - 2016-05-01 - Update to ver 2.0.3
 - 2016-04-28 - Update to ver 2.0.1
