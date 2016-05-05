@@ -7,6 +7,10 @@ export DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_FRONTEND=noninteractive
 dpkg-reconfigure tzdata
 cd /config
 
+#Check the latest version on github
+VERSION="$(curl -sX GET https://api.github.com/repos/bwssytems/ha-bridge/releases/latest | grep 'tag_name' | cut -d\" -f4)"
+VERSION=${VERSION:1}
+echo "Latest version on bwssystems github repo is" $VERSION
 if [ ! -f /config/ha-bridge-"$VERSION".jar ]; then
   echo "Installing version '$VERSION'"
   wget https://github.com/bwssytems/ha-bridge/releases/download/v"$VERSION"/ha-bridge-"$VERSION".jar
