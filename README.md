@@ -20,12 +20,14 @@ On other platforms, you can run this docker with the following command:
 - Replace the SERVERIP variable (192.168.X.X) with your server's IP
 - Replace the SERVERPORT variable (XXXX) with whichever port you choose for the web gui.
 - Replace the "/path/to/config" with your choice of location
+- If the `-v /etc/localtime:/etc/localtime:ro` mapping causes issues, you can try `-e TZ="<timezone>"` with the timezone in the format of "America/New_York"
 
 ##### Optional Variables for the run command
 - By default, this will install the latest version on bwssystems github repo, and will auto update itself to the latest version on each container start, but if you want to run a different version (to go back to the previous version perhaps), include the following environment variable in your docker run command `-e VERSION="X.X.X"`
 - Once installed, open the WebUI at `http://SERVERIP:SERVERPORT/` and enter your Vera, Harmony and Nest info.
   
 #### Changelog: 
+- 2016-11-11 - Change java app to run as root for port 80 binding
 - 2016-05-05 - Auto updates on restart (unless manual version is input)
 - 2016-05-04 - Update to ver 2.0.4
 - 2016-05-01 - Update to ver 2.0.3
