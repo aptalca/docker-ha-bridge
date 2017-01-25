@@ -24,7 +24,7 @@ fi
 echo "Setting correct permissions"
 chown -R nobody:users /config
 
-ADDPARAM="-Dupnp.config.address=$SERVERIP -Dserver.port=$SERVERPORT"
+ADDPARAM="-Dupnp.config.address=$SERVERIP -Dserver.port=$SERVERPORT -Djava.net.preferIPv4Stack=true"
 echo -e "Parameters used:\nServer IP : $SERVERIP\nServer Port : $SERVERPORT"
 
 echo "Starting Home Automation Bridge"
